@@ -23,7 +23,7 @@ int main(void) {
         printf("Soy el proceso padre con pid = %d\n", getpid());
         // Se duerme 10 segundos
         sleep(10);
-        printf("El proceso padre termina\n");
+        printf("El proceso padre termina aquí\n");
         // Fin del proceso padre
     } 
     return 0;
