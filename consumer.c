@@ -29,16 +29,16 @@ int main(void)
 			esNumero = 0; // La variable que comprueba, indica que es un NUMERO
 	   }
 
-	   printf("%c",buffer[0]); // %C -> imprime cada caracter
+	   printf("%c: ",buffer[0]); // %C -> imprime cada caracter
 	   bytesleidos=read(fp,buffer,1); // Leo  el siguiente  byte
 	}
 
 	// Para imprimir por pantalla
 	if(esNumero == 0){ 
-		printf("\nHay numeros\n");
+		printf("Hay numero\n");
 		esNumero = -1;
 	}else{
-		printf("\nNo hay numeros\n");
+		printf(" Hay letra\n");
 	}
 
 	close(fp); 
