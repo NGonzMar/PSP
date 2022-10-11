@@ -8,13 +8,13 @@
 
 int  main()
 {
-   int  fp;
-   char  saludo[]= "9";
+   int  fp; 
+   char  cadena[]= "Hola, soy una cadena.";
 	
     fp = open("FIFODAM",1);
 
     printf("Mandando  informacion  al  FIFO...\n"); 
-    write(fp,saludo,strlen(saludo));
+    write(fp,cadena,strlen(cadena));
     
    close(fp);
    return 0;
