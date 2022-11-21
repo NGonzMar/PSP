@@ -20,7 +20,10 @@ int main()
   printf("\n¡He despertado!\n");
   
   printf("\nInformacion del proceso:\n");
-  system("ps -l");
+  system("ps -ef | grep \"ej11\"");
+  
+  printf("\nArbol de procesos:\n");
+  system("pstree -p");
   
   printf("\nFin del programa.\n");
 }	
